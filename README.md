@@ -7,7 +7,7 @@ https://www.lightningdesignsystem.com/icons/#utility
 
 Usage
   Basic Button
-  1. Define showBtnGroup = TRUE or FALSE (by default set to FALSE)
+  1. Define showBtnGroup = TRUE or FALSE (by default set to FALSE). This will group the buttons together or keep them separate
   2. Populate optLabel01 to show button. If not populated with a text value the button will not show
   3. Use Decisions to evaluate what button was pressed using the output {!value} 
 
