@@ -1,0 +1,22 @@
+<design:component>    
+    <design:attribute name="value" label="value" />
+    <design:attribute name="showBtnGroup" label="showBtnGroup" />
+
+    <design:attribute name="optLabel01" label="optLabel01" />
+    <design:attribute name="optLabel02" label="optLabel02" />
+    <design:attribute name="optLabel03" label="optLabel03" />
+    <design:attribute name="optLabel04" label="optLabel04" />
+    <design:attribute name="optLabel05" label="optLabel05" />
+
+    <design:attribute name="optIcon01" label="optIcon01" />
+    <design:attribute name="optIcon02" label="optIcon02" />
+    <design:attribute name="optIcon03" label="optIcon03" />
+    <design:attribute name="optIcon04" label="optIcon04" />
+    <design:attribute name="optIcon05" label="optIcon05" />
+
+    <design:attribute name="optLabelVar01" label="optLabelVar01" />
+    <design:attribute name="optLabelVar02" label="optLabelVar02" />
+    <design:attribute name="optLabelVar03" label="optLabelVar03" />
+    <design:attribute name="optLabelVar04" label="optLabelVar04" />
+    <design:attribute name="optLabelVar05" label="optLabelVar05" />
+</design:component>

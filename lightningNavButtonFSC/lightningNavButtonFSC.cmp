@@ -1,0 +1,76 @@
+<aura:component implements="lightning:availableForFlowScreens" access="global">
+    <!-- Pass the value of the selected option back to the flow -->
+    <aura:attribute name="value" type="String" />
+    <aura:attribute name="showBtnGroup" default="false" type="Boolean" />    
+
+    <aura:attribute name="optLabel01" type="String" />
+    <aura:attribute name="optLabel02" type="String" />
+    <aura:attribute name="optLabel03" type="String" />
+    <aura:attribute name="optLabel04" type="String" />
+    <aura:attribute name="optLabel05" type="String" />
+
+    <aura:attribute name="optIcon01" type="String" />
+    <aura:attribute name="optIcon02" type="String" />
+    <aura:attribute name="optIcon03" type="String" />
+    <aura:attribute name="optIcon04" type="String" />
+    <aura:attribute name="optIcon05" type="String" />
+
+    <aura:attribute name="optLabelVar01" type="String" default="neutral" />
+    <aura:attribute name="optLabelVar02" type="String" default="neutral" />
+    <aura:attribute name="optLabelVar03" type="String" default="neutral" />
+    <aura:attribute name="optLabelVar04" type="String" default="neutral" />
+    <aura:attribute name="optLabelVar05" type="String" default="neutral" />
+
+    <aura:attribute name="showoptLabel01" type="Boolean" />
+    <aura:attribute name="showoptLabel02" type="Boolean" />
+    <aura:attribute name="showoptLabel03" type="Boolean" />
+    <aura:attribute name="showoptLabel04" type="Boolean" />
+    <aura:attribute name="showoptLabel05" type="Boolean" />
+
+    <aura:handler name="init" value="{!this}" action="{!c.init}" />
+     
+    <!-- Buttons for the agent to click -->
+    <div class="slds-p-top_large slds-p-bottom_large">
+        
+        <!-- If set as TRUE then group buttons together -->
+        <aura:if isTrue="{!v.showBtnGroup}">
+            <lightning:buttongroup>
+                <!-- Shown if there's a value populated, evaluated on init -->
+                <aura:if isTrue="{!v.showoptLabel01}">
+                    <lightning:button label="{!v.optLabel01}" aura:id="optLabel01" iconName="{!v.optIcon01}" variant="{!v.optLabelVar01}" onclick="{!c.handleChange}" />
+                </aura:if>
+                <aura:if isTrue="{!v.showoptLabel02}">
+                    <lightning:button label="{!v.optLabel02}" aura:id="optLabel02" iconName="{!v.optIcon02}" variant="{!v.optLabelVar02}" onclick="{!c.handleChange}" />
+                </aura:if>
+                <aura:if isTrue="{!v.showoptLabel03}">
+                    <lightning:button label="{!v.optLabel03}" aura:id="optLabel03" iconName="{!v.optIcon03}" variant="{!v.optLabelVar03}" onclick="{!c.handleChange}" />
+                </aura:if>
+                <aura:if isTrue="{!v.showoptLabel04}">
+                    <lightning:button label="{!v.optLabel04}" aura:id="optLabel04" iconName="{!v.optIcon04}" variant="{!v.optLabelVar04}" onclick="{!c.handleChange}" />
+                </aura:if>
+                <aura:if isTrue="{!v.showoptLabel05}">
+                    <lightning:button label="{!v.optLabel05}" aura:id="optLabel05" iconName="{!v.optIcon05}" variant="{!v.optLabelVar05}" onclick="{!c.handleChange}" />
+                </aura:if>
+            </lightning:buttongroup>
+
+            <!-- If set as FALSE (by default) then buttons are separated -->
+            <aura:set attribute="else">
+                <aura:if isTrue="{!v.showoptLabel01}">
+                    <lightning:button label="{!v.optLabel01}" aura:id="optLabel01" iconName="{!v.optIcon01}" variant="{!v.optLabelVar01}" onclick="{!c.handleChange}" />
+                </aura:if>
+                <aura:if isTrue="{!v.showoptLabel02}">
+                    <lightning:button label="{!v.optLabel02}" aura:id="optLabel02" iconName="{!v.optIcon02}" variant="{!v.optLabelVar02}" onclick="{!c.handleChange}" />
+                </aura:if>
+                <aura:if isTrue="{!v.showoptLabel03}">
+                    <lightning:button label="{!v.optLabel03}" aura:id="optLabel03" iconName="{!v.optIcon03}" variant="{!v.optLabelVar03}" onclick="{!c.handleChange}" />
+                </aura:if>
+                <aura:if isTrue="{!v.showoptLabel04}">
+                    <lightning:button label="{!v.optLabel04}" aura:id="optLabel04" iconName="{!v.optIcon04}" variant="{!v.optLabelVar04}" onclick="{!c.handleChange}" />
+                </aura:if>
+                <aura:if isTrue="{!v.showoptLabel05}">
+                    <lightning:button label="{!v.optLabel05}" aura:id="optLabel05" iconName="{!v.optIcon05}" variant="{!v.optLabelVar05}" onclick="{!c.handleChange}" />
+                </aura:if>
+            </aura:set>
+        </aura:if>
+    </div>
+</aura:component>
