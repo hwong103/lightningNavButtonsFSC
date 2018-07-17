@@ -2,6 +2,7 @@
 Lightning buttons for Flow Screens
 
 Salesforce links
+
 https://developer.salesforce.com/docs/component-library/bundle/lightning:button/example
 https://www.lightningdesignsystem.com/icons/#utility
 
@@ -9,7 +10,7 @@ Usage
   Basic Button
   1. Define showBtnGroup = TRUE or FALSE (by default set to FALSE). This will group the buttons together or keep them separate
   2. Populate optLabel01 to show button. If not populated with a text value the button will not show
-  3. Use Decisions to evaluate what button was pressed using the output {!value} 
+  3. Use Decisions to evaluate what button was pressed using the output value. The value will be the text value in the label
 
   Modifiers (refer to links above)
   1. Variant - allows you to change the look of the button (by default set to Neutral)
